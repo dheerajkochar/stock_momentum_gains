@@ -15,7 +15,7 @@ earnings feeds, no news APIs, no Bloomberg terminal required.
 | Finding | Result |
 |---|---|
 | Unfiltered base rate (7–10% events) | 22.1% next-day win rate |
-| Conventional research misses | Day+1 intraday high averages +4.12% vs +0.39% close |
+| Conventional research misses | Day+1 intraday high averages +3.69% vs +0.39% close |
 | CLV > 0.942 alone | Lifts target hit rate to 72.3% |
 | Final 3-signal strategy | 77% win rate, +24.9% annual return |
 | Years positive (Exit 1 or 2) | 8 out of 8 |
