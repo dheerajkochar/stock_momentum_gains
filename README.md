@@ -16,7 +16,7 @@ earnings feeds, no news APIs, no Bloomberg terminal required.
 |---|---|
 | Unfiltered base rate (7–10% events) | 22.1% next-day win rate |
 | Conventional research misses | Day+1 intraday high averages +3.69% vs +0.39% close |
-| CLV > 0.942 alone | Lifts target hit rate to 72.3% |
+| CLV > 0.92 alone | Lifts target hit rate to 72.3% |
 | Final 3-signal strategy | 77% win rate, +24.9% annual return |
 | Years positive (Exit 1 or 2) | 8 out of 8 |
 
@@ -25,7 +25,7 @@ earnings feeds, no news APIs, no Bloomberg terminal required.
 Entry Conditions (ALL required):
 
 Event day return  : 7% – 10%
-CLV               : > 0.942  [(Close-Low)/(High-Low)]
+CLV               : > 0.92  [(Close-Low)/(High-Low)]
 ATR Ratio         : < 2.0    [DayRange / ATR_20]
 
 Market Filter : Skip if Nifty 50 fell > 3% on event day
