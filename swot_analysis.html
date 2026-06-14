@@ -1,0 +1,168 @@
+<h2 class="sr-only">SWOT analysis of the Nifty 200 momentum study and trading signal</h2>
+
+<div style="padding: 1rem 0;">
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden;">
+
+<div style="background: var(--color-background-primary); padding: 1.25rem;">
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;">
+    <div style="width: 28px; height: 28px; border-radius: 6px; background: #EAF3DE; display: flex; align-items: center; justify-content: center;">
+      <i class="ti ti-trending-up" style="font-size: 15px; color: #3B6D11;" aria-hidden="true"></i>
+    </div>
+    <span style="font-size: 13px; font-weight: 500; color: #3B6D11; letter-spacing: 0.04em;">STRENGTHS</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+    <div style="border-left: 2px solid #97C459; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">High win rate — 77–82%</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Validated across 213 trades, 7 years. Not a single-year anomaly.</p>
+    </div>
+    <div style="border-left: 2px solid #97C459; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Simple 3-rule entry</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Event return 7–10% + CLV > 0.942 + ATR < 2.0. Computable in 15 min at close.</p>
+    </div>
+    <div style="border-left: 2px solid #97C459; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Positive every year</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Exit 1 and Exit 2 never produced a losing year — including COVID (2020) and rate hikes (2022).</p>
+    </div>
+    <div style="border-left: 2px solid #97C459; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Causal mechanism identified</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">CLV captures institutional supply vacuum at the closing auction — not curve-fitting.</p>
+    </div>
+    <div style="border-left: 2px solid #97C459; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">No expensive data required</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Entirely from public OHLCV via yfinance. No Bloomberg, no earnings feeds.</p>
+    </div>
+    <div style="border-left: 2px solid #97C459; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Intraday measurement insight</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Identified that Day+1 intraday high (+4.12%) vs close (+0.39%) — a finding most research misses.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background: var(--color-background-primary); padding: 1.25rem;">
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;">
+    <div style="width: 28px; height: 28px; border-radius: 6px; background: #FAECE7; display: flex; align-items: center; justify-content: center;">
+      <i class="ti ti-alert-triangle" style="font-size: 15px; color: #993C1D;" aria-hidden="true"></i>
+    </div>
+    <span style="font-size: 13px; font-weight: 500; color: #993C1D; letter-spacing: 0.04em;">WEAKNESSES</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+    <div style="border-left: 2px solid #F0997B; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Very low trade frequency</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Only 26 trades/year average. Capital sits idle 355 days. Real return on total capital is ~2–3%.</p>
+    </div>
+    <div style="border-left: 2px solid #F0997B; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Gap risk — stops don't protect</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">-2% stop became -19% in March 2020. Overnight news events bypass stop orders entirely.</p>
+    </div>
+    <div style="border-left: 2px solid #F0997B; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Stock concentration risk</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">JPPOWER, RPOWER, INOXWIND appear repeatedly. Multiple trades in same stock = same bet repeated.</p>
+    </div>
+    <div style="border-left: 2px solid #F0997B; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Thin annual samples</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">2023 had only 6 trades. Year-level statistics are unreliable at this frequency.</p>
+    </div>
+    <div style="border-left: 2px solid #F0997B; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Survivorship bias</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">2025 Nifty 200 list used for entire backtest. Delisted/poor performers may be underrepresented.</p>
+    </div>
+    <div style="border-left: 2px solid #F0997B; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">No earnings filter</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Post-earnings gaps behave differently from price-only breakouts. Mixed signal pool.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background: var(--color-background-primary); padding: 1.25rem;">
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;">
+    <div style="width: 28px; height: 28px; border-radius: 6px; background: #E6F1FB; display: flex; align-items: center; justify-content: center;">
+      <i class="ti ti-bulb" style="font-size: 15px; color: #185FA5;" aria-hidden="true"></i>
+    </div>
+    <span style="font-size: 13px; font-weight: 500; color: #185FA5; letter-spacing: 0.04em;">OPPORTUNITIES</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+    <div style="border-left: 2px solid #85B7EB; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Expand to Nifty 500</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Adding mid and small caps could triple trade frequency from 26/yr to 70–80/yr with same rules.</p>
+    </div>
+    <div style="border-left: 2px solid #85B7EB; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Add earnings filter</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Separating earnings-driven events from price-only breakouts could significantly sharpen edge.</p>
+    </div>
+    <div style="border-left: 2px solid #85B7EB; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Options strategy overlay</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">77% directional accuracy makes this a strong candidate for long call or bull call spread overlays to amplify returns.</p>
+    </div>
+    <div style="border-left: 2px solid #85B7EB; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Scale capital per trade</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Same signal works at ₹2L or ₹5L/trade. Annual PnL scales linearly with position size.</p>
+    </div>
+    <div style="border-left: 2px solid #85B7EB; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Intraday entry refinement</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Adding pre-market futures check could avoid catastrophic gap-down stops before they happen.</p>
+    </div>
+    <div style="border-left: 2px solid #85B7EB; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Apply same framework globally</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">CLV + ATR methodology is market-agnostic. US, European, or other emerging market equities are natural extensions.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background: var(--color-background-primary); padding: 1.25rem;">
+  <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1rem;">
+    <div style="width: 28px; height: 28px; border-radius: 6px; background: #FCEBEB; display: flex; align-items: center; justify-content: center;">
+      <i class="ti ti-shield-off" style="font-size: 15px; color: #A32D2D;" aria-hidden="true"></i>
+    </div>
+    <span style="font-size: 13px; font-weight: 500; color: #A32D2D; letter-spacing: 0.04em;">THREATS</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px;">
+    <div style="border-left: 2px solid #F09595; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Signal decay as adoption grows</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">If many traders use the same CLV+ATR rules, arbitrage compresses the gap. Edge erodes over time.</p>
+    </div>
+    <div style="border-left: 2px solid #F09595; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">2024–2025 gap behaviour change</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Gap ≥ 3% at open dropped from 36% (IS) to 0% (2025 OOS). Market structure may have shifted permanently.</p>
+    </div>
+    <div style="border-left: 2px solid #F09595; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Systemic crash events</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">COVID-style tail events create -15% to -20% overnight gaps that stops cannot protect against.</p>
+    </div>
+    <div style="border-left: 2px solid #F09595; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Regulatory changes</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">SEBI changes to circuit breakers, auction timing, or F&O rules could alter the closing auction dynamics that CLV depends on.</p>
+    </div>
+    <div style="border-left: 2px solid #F09595; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Algo front-running</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Institutional algorithms scanning the same CLV conditions could buy before retail close, compressing the overnight gap opportunity.</p>
+    </div>
+    <div style="border-left: 2px solid #F09595; padding-left: 10px;">
+      <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px;">Prolonged bear market</p>
+      <p style="font-size: 12px; color: var(--color-text-secondary); margin: 0;">Strategy was never tested in a multi-year bear market. 2022 showed strain (₹11,699 vs ₹87,621 in 2020). A full bear cycle is unknown territory.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 1rem;">
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem; text-align: center;">
+    <p style="font-size: 20px; font-weight: 500; color: #3B6D11; margin: 0;">6</p>
+    <p style="font-size: 11px; color: var(--color-text-secondary); margin: 4px 0 0;">strengths</p>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem; text-align: center;">
+    <p style="font-size: 20px; font-weight: 500; color: #993C1D; margin: 0;">6</p>
+    <p style="font-size: 11px; color: var(--color-text-secondary); margin: 4px 0 0;">weaknesses</p>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem; text-align: center;">
+    <p style="font-size: 20px; font-weight: 500; color: #185FA5; margin: 0;">6</p>
+    <p style="font-size: 11px; color: var(--color-text-secondary); margin: 4px 0 0;">opportunities</p>
+  </div>
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem; text-align: center;">
+    <p style="font-size: 20px; font-weight: 500; color: #A32D2D; margin: 0;">6</p>
+    <p style="font-size: 11px; color: var(--color-text-secondary); margin: 4px 0 0;">threats</p>
+  </div>
+</div>
+
+</div>
